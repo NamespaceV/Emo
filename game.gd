@@ -4,10 +4,10 @@ extends Node2D
 ## 100 = all bar in 1 s
 const SPEED = 30
 
-var BAR_START = Vector2(42,573)
-var BAR_END = Vector2(1094,544)
+var BAR_START = Vector2(136,509)
+var BAR_END = Vector2(1187,485)
 
-@onready var arrow : Polygon2D = $Arrow
+@onready var arrow : Polygon2D = $Bar/Arrow
 @onready var happy : RichTextLabel = $Hapiness
 
 var arrow_pct : float

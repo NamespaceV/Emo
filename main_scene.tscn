@@ -19,8 +19,8 @@ texture_offset = Vector2(-100, 0)
 texture_scale = Vector2(0.25, 0.25)
 polygon = PackedVector2Array(129, 524, 1190, 498, 1188, 563, 125, 569)
 
-[node name="Arrow" type="Polygon2D" parent="."]
-position = Vector2(1094, 544)
+[node name="Arrow" type="Polygon2D" parent="Bar"]
+position = Vector2(136, 509)
 color = Color(0, 0, 0, 1)
 offset = Vector2(-371, -555)
 polygon = PackedVector2Array(342, 427, 399, 427, 396, 496, 444, 484, 370, 554, 296, 505, 351, 497)
@@ -33,3 +33,21 @@ offset_bottom = 392.0
 theme_override_font_sizes/normal_font_size = 70
 text = "Hapiness: 0000
 debug info"
+
+[node name="RAGE" type="RichTextLabel" parent="."]
+offset_left = 1126.0
+offset_top = 440.0
+offset_right = 1365.0
+offset_bottom = 543.0
+rotation = 1.22727
+theme_override_font_sizes/normal_font_size = 70
+text = "RAGE"
+
+[node name="RAGE2" type="RichTextLabel" parent="."]
+offset_left = 94.0
+offset_top = 305.0
+offset_right = 440.0
+offset_bottom = 408.0
+rotation = 1.22727
+theme_override_font_sizes/normal_font_size = 70
+text = "INVISIBLE"
