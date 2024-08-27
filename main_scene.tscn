@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://game.gd" id="1_38741"]
 
 [sub_resource type="Gradient" id="Gradient_kvuk2"]
-offsets = PackedFloat32Array(0, 0.521127, 0.830986, 1)
-colors = PackedColorArray(0.82881, 2.71939e-06, 5.77569e-07, 1, 0.107667, 0.581191, 0.132148, 1, 0, 0.473037, 0.310308, 1, 0, 0.354794, 0.354794, 1)
+offsets = PackedFloat32Array(0, 0.295775, 0.690141, 1)
+colors = PackedColorArray(3.85046e-07, 0.692609, 0.692608, 1, 0.105882, 0.580392, 0.133333, 1, 0.107667, 0.581191, 0.132148, 1, 0.82881, 2.71939e-06, 5.77569e-07, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_8drq3"]
 gradient = SubResource("Gradient_kvuk2")
@@ -15,7 +15,8 @@ script = ExtResource("1_38741")
 [node name="Bar" type="Polygon2D" parent="."]
 position = Vector2(-93, 59)
 texture = SubResource("GradientTexture1D_8drq3")
-texture_scale = Vector2(0.3, 0.3)
+texture_offset = Vector2(-100, 0)
+texture_scale = Vector2(0.25, 0.25)
 polygon = PackedVector2Array(129, 524, 1190, 498, 1188, 563, 125, 569)
 
 [node name="Arrow" type="Polygon2D" parent="."]
@@ -25,9 +26,10 @@ offset = Vector2(-371, -555)
 polygon = PackedVector2Array(342, 427, 399, 427, 396, 496, 444, 484, 370, 554, 296, 505, 351, 497)
 
 [node name="Hapiness" type="RichTextLabel" parent="."]
-offset_left = 28.0
-offset_top = 17.0
-offset_right = 875.0
-offset_bottom = 123.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1150.0
+offset_bottom = 392.0
 theme_override_font_sizes/normal_font_size = 70
-text = "Hapiness: 0000"
+text = "Hapiness: 0000
+debug info"
