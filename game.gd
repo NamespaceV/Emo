@@ -14,6 +14,8 @@ var arrow_pct :  float
 
 
 func _process(delta : float):
-	arrow_pct += delta * SPEED / 100.0
+	if Input.is_action_just_pressed("main_action"):
+		arrow_pct += 0.1
+	arrow_pct -= delta * SPEED / 100.0
 	arrow_pct = clamp(arrow_pct, 0 ,1)
 	arrow.position = lerp(BAR_START, BAR_END, arrow_pct)
